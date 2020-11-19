@@ -28,11 +28,23 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  margin: 10px;
+  padding: 10px;
+  background-color: lightpink;
+
+}
+input{
+  padding: 10px;
+  margin: 10px;
+}
+
+div{
+  margin: 10px;
+  background-color: lightgoldenrodyellow;
+}
+
+table{
+  font-size: 20px;
+  padding: 10px;
 }
