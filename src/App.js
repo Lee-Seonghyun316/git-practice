@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useState, useEffect } from "react";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
@@ -9,7 +10,7 @@ import Profile from "./certification/Profile";
 import NotFound from "./form/NotFound";
 import LoginForm from "./form/LoginForm";
 import LogoutButton from "./form/LogoutButton";
-//import signUp from "./form/signUp"
+import signUp from "./form/signUp"
 import './App.css';
 
 
@@ -35,6 +36,10 @@ function App() {
                     <button>Profile</button>
                 </Link>
 
+                <Link to="/signUp">
+                    <button>signUp</button>
+                </Link>
+
 
             </header>
             <hr />
@@ -46,6 +51,10 @@ function App() {
                         render={props => (
                             <LoginForm authenticated={authenticated} login={login} {...props} />
                         )}
+                    />
+                    <Route
+                        path="/signUp"
+                        component={signUp}
                     />
                     <AuthRoute
                         authenticated={authenticated}
